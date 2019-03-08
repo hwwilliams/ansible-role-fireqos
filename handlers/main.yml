@@ -1,0 +1,7 @@
+---
+- name: Restart and Enable FireQoS
+  become: true
+  service:
+    name: firehol
+    state: restarted
+    enabled: true

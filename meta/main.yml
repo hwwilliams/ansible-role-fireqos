@@ -1,0 +1,21 @@
+---
+dependencies:
+  - hwwillians.firehol
+
+galaxy_info:
+  role_name: fireqos
+  author: hwwilliams
+  description: Installs and configures FireQoS on Debian/Ubuntu based Linux systems
+  license: license (MIT)
+  min_ansible_version: 2.4
+  platforms:
+    - name: Debian
+      versions:
+        - stretch
+    - name: Ubuntu
+      versions:
+        - bionic
+  galaxy_tags:
+    - firewall
+    - networking
+    - system

@@ -1,0 +1,10 @@
+---
+- name: Ensure FireQoS Configuration File Is Present
+  become: true
+  template:
+    src: templates/fireqos.conf.j2
+    dest: /etc/firehol/fireqos.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: Restart and Enable FireQoS
